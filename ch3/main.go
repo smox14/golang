@@ -2,8 +2,8 @@ package main
 import "fmt"
 
 func main(){
-	fmt.Println(len("Hello World"))
-	fmt.Println("Hello World"[1])
-	fmt.Println("Hello " + "World")
+	var x string
+	x = "Hello World"
+	fmt.Println(x)
 
 }
