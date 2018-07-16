@@ -3,16 +3,27 @@ package main
 import "fmt"
 
 func main(){
-	var x [5]float64
-	x[0] = 98
-	x[1] = 93
-	x[2] = 88
-	x[3] = 82
-	x[4] = 92
+	fmt.Print("Enter a number: ")
+	var input float64
+	fmt.Scanf("%f", &input)
 
-	var total float64 = 0
-	for i := 0; i < 5; i++ {
-		total += x[i]
+	output := input * 2
+	fmt.Println(output)
+
+
+ 	x := [5]float64{
+		98,
+ 		93,
+  		77,
+		82,
+ 		83,
 	}
-	fmt.Println(total / 5)
+
+	var total float64
+	for _, value := range x {
+		total += value
+
+	}
+
+	fmt.Println(total / float64(len(x)))
 }
