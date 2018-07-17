@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 	fmt.Print("Enter a number: ")
 	var input float64
 	fmt.Scanf("%f", &input)
@@ -10,13 +10,12 @@ func main(){
 	output := input * 2
 	fmt.Println(output)
 
-
- 	x := [5]float64{
+	x := [5]float64{
 		98,
- 		93,
-  		77,
+		93,
+		77,
 		82,
- 		83,
+		83,
 	}
 
 	var total float64

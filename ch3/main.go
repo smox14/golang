@@ -1,7 +1,8 @@
 package main
+
 import "fmt"
 
-func main(){
+func main() {
 	var x string
 	x = "Hello World"
 	fmt.Println(x)
