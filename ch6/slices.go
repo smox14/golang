@@ -10,7 +10,7 @@ import "fmt"
 	- A slice also has two built-in functions: "append" and "coppy"
 */
 
-func main() {
+func slices() {
 	//var x []float64
 	x := make([]float64, 5, 10)
 	arr := [5]float64{1, 2, 3, 4, 5}
