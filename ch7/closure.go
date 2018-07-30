@@ -2,8 +2,25 @@ package main
 
 import "fmt"
 
+/* Closure -> the way to create functions inside of functions
+ */
+func makeEvenGenerator() func() uint {
+	i := uint(0)
+	return func() (ret uint) {
+		ret = i
+		i += 2
+		return
+	}
+}
+
 func main() {
-	add := func(x, y int) int {
+
+	nextEven := makeEvenGenerator()
+	fmt.Println(nextEven())
+	fmt.Println(nextEven())
+	fmt.Println(nextEven())
+
+	/*add := func(x, y int) int {
 		return x + y
 	}
 
@@ -16,4 +33,5 @@ func main() {
 	}
 	fmt.Println(increment())
 	fmt.Println(increment())
+	*/
 }
